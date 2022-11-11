@@ -1,0 +1,29 @@
+<div class="form-input-wrapper">
+  <label *ngIf="labelText" for="{{ inputId }}">{{ labelText }}</label>
+  <app-text-input
+    *ngIf="type === 'text' || type === 'password'"
+    inputId="{{ inputId }}"
+    name="{{ name }}"
+    type="{{ type }}"
+  ></app-text-input>
+  <app-image-input *ngIf="type === 'image'" name="{{ name }}"></app-image-input>
+  <app-switch-input
+    *ngIf="type === 'switch'"
+    name="{{ name }}"
+    inputId="{{ inputId }}"
+  ></app-switch-input>
+  <button
+    type="button"
+    *ngIf="bottomAction"
+    class="btn input-bottom-action"
+    (click)="bottomAction.action()"
+  >
+    {{ bottomAction.text }}
+  </button>
+  <app-select-input
+    *ngIf="type === 'select'"
+    inputId="{{ inputId }}"
+    name="{{ name }}"
+    [data]="data"
+  ></app-select-input>
+</div>

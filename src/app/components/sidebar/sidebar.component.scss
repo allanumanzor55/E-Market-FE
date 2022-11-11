@@ -1,0 +1,20 @@
+@import "component";
+
+aside {
+  width: 300px;
+  height: $vh-no-nav;
+  background-color: #fff;
+  padding: 27px 12px;
+
+  h4 {
+    @include title-large-font;
+    color: $primary;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}

@@ -1,0 +1,50 @@
+@mixin display-large-font {
+  font-weight: 900;
+  font-size: 3.56rem;
+  line-height: 112%;
+}
+
+@mixin display-small-font {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 3.25rem;
+}
+
+@mixin title-large-font {
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 127%;
+}
+
+@mixin title-medium-font {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0.0015em;
+}
+
+@mixin title-small-font {
+  font-weight: 500;
+  font-size: 0.93333rem;
+  line-height: 143%;
+  letter-spacing: 0.0015em;
+}
+
+@mixin label-large-font {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 143%;
+  letter-spacing: 0.01em;
+}
+
+@mixin label-small-font {
+  font-weight: 500;
+  font-size: 0.6875rem;
+  letter-spacing: 0.005em;
+}
+
+@mixin headline-small-font {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 150%;
+}

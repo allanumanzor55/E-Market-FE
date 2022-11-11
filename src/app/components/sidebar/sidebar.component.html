@@ -1,0 +1,10 @@
+<aside>
+  <h4>{{ title }}</h4>
+  <ul>
+    <app-sidebar-btn
+      *ngFor="let option of options"
+      [optionItem]="option"
+      [isActive]="option.route === activeDir"
+    ></app-sidebar-btn>
+  </ul>
+</aside>

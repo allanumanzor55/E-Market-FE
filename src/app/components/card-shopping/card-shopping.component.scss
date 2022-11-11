@@ -1,0 +1,49 @@
+@import "component";
+
+.product-container{
+    width: 100%;
+    background-color: $white2;
+    border: 1px solid $softPurple;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+    display: flex;
+    &-name{
+        @include title-medium-font;
+        color: $purple3;
+        margin: 0px;
+    }
+    &-data{
+        display: flex;
+        justify-content: space-between;
+        &-init{
+            @include title-medium-font;
+            color: $purple2;
+            margin: 0px
+        }
+        &-price{
+            @include label-large-font;
+            color: $purple3;
+        }
+        &-price-content{
+            padding-right: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            .cdm{
+                margin: 0px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+input{
+    background: $white2;
+    border: 1px solid #E8DEFF;
+    border-radius: 12px;
+    padding-left: 10px;
+    width: 100px;
+    margin-left: 5px;
+}

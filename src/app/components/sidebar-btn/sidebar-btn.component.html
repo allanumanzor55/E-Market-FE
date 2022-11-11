@@ -1,0 +1,6 @@
+<a *ngIf="optionItem" routerLink="{{ optionItem.route }}">
+  <li [ngClass]="classNames">
+    <span class="material-icons">{{ optionItem.icon }}</span>
+    <p>{{ optionItem.label }}</p>
+  </li>
+</a>

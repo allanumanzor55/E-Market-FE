@@ -1,0 +1,18 @@
+@import "component";
+
+.modal-background {
+  background-color: transparentize($black, 0.7);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .children-wrapper {
+    width: max-content;
+    height: max-content;
+  }
+}

@@ -1,0 +1,5 @@
+<div class="modal-background" *ngIf="isOpen" (click)="handleClose()">
+  <div class="children-wrapper" (click)="preventPropagation($event)">
+    <ng-content></ng-content>
+  </div>
+</div>

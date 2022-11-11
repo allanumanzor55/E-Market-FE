@@ -1,0 +1,31 @@
+<app-login-register-form type="register">
+  <form [formGroup]="registerForm" (ngSubmit)="register()">
+    <app-form-input
+      labelText="Correo electrónico"
+      name="email"
+    ></app-form-input>
+    <app-form-input labelText="Nombre completo" name="name"></app-form-input>
+    <app-form-input
+      labelText="Contraseña"
+      name="password"
+      type="password"
+    ></app-form-input>
+    <app-form-input
+      type="switch"
+      labelText="Cuenta empresarial"
+      name="isCompany"
+    ></app-form-input>
+    <app-form-input
+      *ngIf="registerForm.value.isCompany"
+      labelText="Nombre de empresa"
+      name="companyName"
+    ></app-form-input>
+    <div class="btn-wrapper">
+      <app-button
+        type="primary"
+        text="Crear cuenta"
+        [fullWidth]="true"
+      ></app-button>
+    </div>
+  </form>
+</app-login-register-form>

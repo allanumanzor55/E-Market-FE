@@ -1,0 +1,18 @@
+<div class="content-option">
+    <div>
+        <label>Ordenado hace:</label>
+        <select id="orderHistory">
+            <option value="1">una semana</option>
+            <option value="2">un mes</option>
+            <option value="3">3 meses</option>
+        </select>
+    </div>
+    <div>
+        <label>Buscar pedido:</label>
+        <input type="text" name="search" id="searchHistory">
+    </div>
+</div>
+<div class="container-history">
+    <app-card-shopping [product]="product" type="shoppingHistory"  *ngFor="let product of productShopping"></app-card-shopping>
+</div>
+

@@ -1,0 +1,30 @@
+<h1 id="h1-prepared">¿Preparado para comenzar?</h1>
+<h3 id="h3-choose">Elige un plan que se adapte a tus necesidades</h3>
+<div class="container-plan">
+  <div class="plan" *ngFor="let planSelect of plansList">
+    <div class="plan-header">
+      <div>
+        <span style="font-size: 50px" class="material-icons">{{
+          planSelect.icon
+        }}</span>
+      </div>
+      <div>
+        <h2 class="plan-name">{{ planSelect.name }}</h2>
+        <p class="slogan">{{ planSelect.slogan }}</p>
+      </div>
+    </div>
+    <h1 class="plan-type">{{ planSelect.type }}</h1>
+    <button class="plan-buttom" (click)="selectPlan(planSelect.id)">Obtener</button>
+    <h3 class="include">Incluye:</h3>
+    <div class="plan-include-container">
+      <div class="plan-include" *ngFor="let planInclude of planSelect.include">
+        <div class="plan-include-icon">
+          <span class="material-icons">{{ planInclude.icon }}</span>
+        </div>
+        <div class="plan-include-content">
+          {{ planInclude.description }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

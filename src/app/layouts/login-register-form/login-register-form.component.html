@@ -1,0 +1,33 @@
+<div class="login-and-register-layout" [ngClass]="type">
+  <div class="side-seciton">
+    <h3>{{ sidebarTitle }}</h3>
+    <img src="{{ image }}" alt="login image" />
+    <div class="side-section-btn-wrapper">
+      <app-button
+        type="outline"
+        text="{{ sidebarBtnText }}"
+        redirectTo="{{ redirectTo }}"
+        [fullWidth]="true"
+      ></app-button>
+    </div>
+  </div>
+  <main class="login-register-container">
+    <h4>{{ title }}</h4>
+
+    <div class="logos-container">
+      <div class="logo-wrapper">
+        <fa-icon [icon]="facebookIcon"></fa-icon>
+      </div>
+      <div class="logo-wrapper">
+        <fa-icon [icon]="googleIcon"></fa-icon>
+      </div>
+      <div class="logo-wrapper">
+        <fa-icon [icon]="linkedinIcon"></fa-icon>
+      </div>
+    </div>
+
+    <p class="alternative-options-text">o prueba con</p>
+
+    <ng-content></ng-content>
+  </main>
+</div>

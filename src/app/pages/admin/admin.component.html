@@ -1,0 +1,7 @@
+<app-main currentSubDir="{{ currentSubDir }}">
+  <router-outlet></router-outlet>
+  <div *ngIf="isRootUrl" class="img-wrapper">
+    <img src="{{ welcomeImg }}" alt="welcome admin image" />
+    <h4>Bienvenido de vuelta {{ userName }}</h4>
+  </div>
+</app-main>

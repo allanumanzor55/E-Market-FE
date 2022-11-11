@@ -1,0 +1,21 @@
+<app-login-register-form>
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <app-form-input
+      labelText="Correo electrónico"
+      name="email"
+    ></app-form-input>
+    <app-form-input
+      labelText="Contraseña"
+      name="password"
+      type="password"
+      [bottomAction]="recoverPasswordBtnData"
+    ></app-form-input>
+    <div class="btn-wrapper">
+      <app-button
+        type="primary"
+        text="Iniciar sesión"
+        [fullWidth]="true"
+      ></app-button>
+    </div>
+  </form>
+</app-login-register-form>

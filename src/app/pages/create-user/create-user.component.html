@@ -1,0 +1,46 @@
+<form
+  class="container-options"
+  [formGroup]="newUserForm"
+  (ngSubmit)="createUser()"
+>
+  <h3 class="title">Crear usuario nuevo</h3>
+
+  <app-form-input type="image" name="profilePic"></app-form-input>
+
+  <app-form-input type="text" labelText="Nombre completo" name="name">
+  </app-form-input>
+
+  <app-form-input type="text" labelText="Correo electronico" name="email">
+  </app-form-input>
+
+  <app-form-input
+    type="select"
+    labelText="Tipo de usuario"
+    name="userType"
+    [data]="dataUserType"
+  >
+  </app-form-input>
+
+  <app-form-input
+    *ngIf="newUserForm.value.userType == '3' && userData?.role=='admin'"
+    type="select"
+    labelText="Empresa"
+    name="companyId"
+    [data]="companiesList"
+  >
+  </app-form-input>
+
+  <div class="container-buttoms">
+    <div class="btn-wrapper">
+      <app-button
+        type="secondary"
+        text="Cancelar"
+        redirectTo="{{ usersListUrl }}"
+        [fullWidth]="true"
+      ></app-button>
+    </div>
+    <div class="btn-wrapper">
+      <app-button type="primary" text="Crear" [fullWidth]="true"></app-button>
+    </div>
+  </div>
+</form>

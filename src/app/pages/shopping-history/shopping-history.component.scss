@@ -1,0 +1,44 @@
+@import "component";
+
+.container-history{
+    margin:10px;
+}
+
+.content-option{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    select{
+        background: $white2;
+        border: 1px solid $softPurple;
+        border-radius: 12px;
+        margin-left: 5px;
+        margin-right: 30px;
+        width: 200px;
+        height: 28px;
+        @include title-medium-font;
+        color: $purple2;
+        &:focus{ 
+            outline: none;
+        }
+    }
+
+    input{
+        margin-left: 5px;
+        background: #FBF8F8;
+        border: 1px solid #D3C7FF;
+        border-radius: 12px;
+        width: 320px;
+        padding-left: 5px;
+        @include title-medium-font;
+        color:$purple2;
+        &:focus{ 
+            outline: none;
+        }
+    }
+
+    label{
+        @include headline-small-font;
+         color:$purple3
+    }
+}

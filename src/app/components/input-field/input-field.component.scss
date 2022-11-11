@@ -1,0 +1,24 @@
+.container-options-image{
+    width: 168px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    background-size: contain;
+    border-radius: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+    &-internal{
+        width: 168px; 
+        height:168px;
+        
+        &:hover{
+            .image{
+                opacity: 100;
+            }
+        }
+        .image{
+            width: inherit;opacity: 0;
+            transition: all 0.2s;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+<h3 class="title-template">Nombre de la plantilla</h3>
+<div class="container-fluid">
+    <div class="row">
+        <div [ngClass]="col.class" *ngFor="let col of cols">
+            <div class="column-inside">
+                <div class="column-inside-text">{{col.class}}</div>
+                <div class="column-inside-icon">
+                    <span (click)="colOption(col.id)" class="material-icons">more_vert</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-1">
+            <span (click)="newCol()" class="material-icons" id="add">add</span>
+        </div>
+    </div>
+</div>

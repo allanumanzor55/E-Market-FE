@@ -1,0 +1,20 @@
+@import "material-icons/iconfont/material-icons.css";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+}

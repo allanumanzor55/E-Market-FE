@@ -1,0 +1,12 @@
+<ng-container>
+  <div [ngClass]="{ 'image-input-wrapper': true, 'has-image': srcImage }">
+    <span class="material-icons">upload</span>
+    <img
+      *ngIf="srcImage"
+      [src]="srcImage"
+      alt="new user image"
+      name="{{ name }}"
+    />
+    <input type="file" (change)="getImage($event)" accept="image/*" />
+  </div>
+</ng-container>

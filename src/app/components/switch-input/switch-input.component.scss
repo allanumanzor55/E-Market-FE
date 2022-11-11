@@ -1,0 +1,28 @@
+@import "component";
+
+.checkbox-input {
+  -webkit-appearance: none;
+  position: relative;
+  background: #dfdfdf;
+  height: 30px;
+  width: 60px;
+  border-radius: 20px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    background-color: #cdbeff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    transition: 0.3s;
+  }
+
+  &:checked::before {
+    left: 30px;
+    background-color: $primary;
+  }
+}

@@ -1,0 +1,15 @@
+<ng-container [formGroup]="form">
+  <div class="form-input-wrapper">
+    <select
+      #device
+      formControlName="{{ name }}"
+      id="{{ inputId }}"
+      name="{{ name }}"
+      class="text-input"
+    >
+      <option value="{{ item.value }}" *ngFor="let item of data">
+        {{ item.option }}
+      </option>
+    </select>
+  </div>
+</ng-container>

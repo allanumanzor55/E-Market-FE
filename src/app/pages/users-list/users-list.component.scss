@@ -1,0 +1,23 @@
+@import "component";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0 35px;
+  align-items: center;
+
+  h1 {
+    color: $primary;
+    @include display-small-font;
+  }
+
+  .button-wrapper {
+    width: 165px;
+  }
+}
+
+.users-list-container {
+  padding: 0 88px;
+  max-width: 1250px;
+  margin: auto;
+}

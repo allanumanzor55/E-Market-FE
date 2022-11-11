@@ -1,0 +1,59 @@
+<div class="banner-landing">
+  <h1>Hagamos de esta comunidad MÁS grande</h1>
+  <h3>Registrate con nosotros y explora nuestra plataforma</h3>
+</div>
+
+<div class="main" id="main">
+  <div class="row">
+    <div class="col-6">
+      <h1>
+        Cualquier persona puede poner en marcha un negocio en cualquier lugar.
+        ¡Atrevete a intentarlo!
+      </h1>
+      <button>Afiliate Ahora</button>
+    </div>
+    <div class="col-6">
+      <img
+        src="../../../assets/images/presentacion_landing.png"
+        alt="presentacion"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="present-comerce">
+  <h1>¿Necesitas comprar algun producto?</h1>
+  <h3>Unete a nuestra plataforma y explora hasta encontrar lo que necesites</h3>
+  <h3>Registrate ahora y podras comprar desde la comodidad de tu hogar</h3>
+  <h2>¿QUE ESPERAS?</h2>
+  <div class="div-buttom">
+    <a class="btn btn-is" routerLink="{{ loginRoute }}">Inicia tu Sesion</a>
+    <a class="btn btn-r" routerLink="{{ registerRoute }}">Registrate Ahora</a>
+  </div>
+  <div class="show-container-business">
+    <div class="container-business" *ngFor="let photo of companiesList">
+      <img [src]="photo.logo || defaultImg " [title]="photo.name" (click)="go(photo.name)" alt="logo" />
+    </div>
+  </div>
+</div>
+
+<div class="advantage">
+  <h3 class="advantage-joining">¿Ventajas si te afilias con nosotros?</h3>
+  <div class="container-advantage" style="margin-top: 50px">
+    <div class="unit-container">
+      <span class="material-icons">edit</span>
+      <h3>Crea tu pagina</h3>
+      <p>Inserta codigo HTML, CSS y JAVASCRIPT.¡Diseña a tu gusto!</p>
+    </div>
+    <div class="unit-container">
+      <span class="material-icons">list_alt</span>
+      <h3>Administra productos</h3>
+      <p>Crea tus productos para precentarlos dentro de tu pagina</p>
+    </div>
+    <div class="unit-container">
+      <span class="material-icons">archive</span>
+      <h3>Ten almacenamiento</h3>
+      <p>Almacena imagenes, documentos y todo lo que necesites</p>
+    </div>
+  </div>
+</div>

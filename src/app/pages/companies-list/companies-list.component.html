@@ -1,0 +1,22 @@
+<div class="users-list-container">
+    <header>
+        <h1>Empresas</h1>
+        <div class="button-wrapper">
+          <app-button
+            text="Crear usuario"
+            type="primary"
+            [fullWidth]="true"
+            redirectTo="{{ createUserUrl }}"
+          ></app-button>
+        </div>
+      </header>
+    <app-cards-list>
+        <app-card
+          *ngFor="let company of companyList"
+          title="{{ company.name }}"
+          subTitle="{{ company.slogan }}"
+          text="{{ company.location || undefined }}"
+          image="{{ company.logo || defaultImg }}"
+        ></app-card>
+      </app-cards-list>
+</div>

@@ -1,0 +1,27 @@
+<div class="product-container">
+    <div style="padding: 5px; height: 120px;">
+        <img style="height: -webkit-fill-available;" [src]="product.imageRute" alt="producto">
+    </div>
+    <div style="width:100%">
+        <h3 class="product-container-name">{{product.nameProduct}}</h3>
+        <div class="product-container-data">
+            <div>
+                <h4 class="product-container-data-init" *ngIf="type==='shoppingHistory'">{{product.date}}</h4>
+                <div>
+                    
+                    <form [formGroup]="productAmount">
+                        <label class="product-container-data-init">Cantidad:  </label>
+                        <label class="product-container-data-init" *ngIf="type==='shoppingHistory'"> {{product.amount}}</label>
+                        <input [(ngModel)]="product.amount" *ngIf="type==='shoppingCard'" type="number" formControlName="amount">
+                    </form>
+                    
+                </div>
+                <app-button type="primary" text="Eliminar" *ngIf="type==='shoppingCard'"></app-button>
+            </div>
+            <div class="product-container-data-price-content" style="padding-right:10px ;">
+                <h5 class="product-container-data-init cdm" >{{type==='shoppingCard' ? "Precio" : "Total"}}</h5>
+                <h5 class="product-container-data-price cdm">L.{{product.price}}</h5>
+            </div>
+        </div>
+    </div>
+</div>

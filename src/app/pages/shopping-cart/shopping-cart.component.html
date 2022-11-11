@@ -1,0 +1,19 @@
+<h3 class="title">Carrito de compras</h3>
+<div class="container-cart">
+    <div class="container-cart-products" style="padding-right: 10px;">
+        <app-card-shopping [product]="product" type="shoppingCard"  *ngFor="let product of productShopping"></app-card-shopping>
+    </div>
+    <div class="container-cart-total">
+        <div class="container-cart-total-card">
+            <h5 class="total-products">{{countProducts()}} Productos</h5>
+            <h5 class="subtotal-products">Subtotal: {{subtotal()}}</h5>
+            <div class="buy">
+                <app-button 
+                type="primary" 
+                text="Comprar"
+                [fullWidth]="true">
+                </app-button>
+            </div>
+        </div>
+    </div>
+</div>

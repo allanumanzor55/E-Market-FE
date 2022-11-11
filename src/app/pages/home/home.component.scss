@@ -1,0 +1,205 @@
+@import "component";
+
+nav {
+  position: absolute;
+  width: -webkit-fill-available;
+  height: 88px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(180deg, #7d58ff 78.39%, #e5eded 100%);
+  .area-buttom {
+    width: fit-content;
+    margin: 15px 15px 0 auto;
+    display: flex;
+    gap: 15px;
+
+    .button-header {
+      padding: 10px 24px;
+      background: $primary;
+      box-shadow: 0px 1px 1px rgb(0 0 0 / 25%);
+      border-radius: 20px;
+      border: none;
+      color: $white1;
+      font-size: 14px;
+    }
+  }
+}
+
+.banner-landing {
+  background-image: url(../../../assets/images/baner_landing.png);
+  height: 690px;
+  width: -webkit-fill-available;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 85px;
+  h1 {
+    padding-top: 300px;
+    padding-left: 18%;
+    font-weight: 900;
+    font-size: 57px;
+    line-height: 64px;
+    margin-bottom: 0px;
+    color: #7a54ff;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #a991ff;
+    line-height: 52px;
+    padding-left: 22%;
+    margin-top: 10px;
+  }
+}
+
+#main {
+  padding-left: 90px;
+  .row {
+    width: 100%;
+  }
+  .col-6 {
+    h1 {
+      font-weight: 900;
+      font-size: 50px;
+      color: #7a54ff;
+      margin-left: 90px;
+    }
+    button {
+      width: 208px;
+      height: 40px;
+      border: 1px solid #27213c;
+      filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25));
+      border-radius: 20px;
+      margin-left: 90px;
+    }
+  }
+}
+
+.present-comerce {
+  align-items: center;
+  background-image: url(../../../assets/images/onda_landing.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  h1 {
+    font-weight: 900;
+    font-size: 57px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: #7a54ff;
+    padding-top: 40px;
+    align-items: center;
+    text-align: center;
+  }
+  h3 {
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    font-size: 32px;
+    color: #4e4c4c;
+    align-items: center;
+    text-align: center;
+  }
+  h2 {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    font-weight: 700;
+    font-size: 36px;
+  }
+  .div-buttom {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    button,
+    a {
+      width: 180px;
+      height: 40px;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      border: none;
+    }
+    .btn-is {
+      background: #ececec;
+      margin-right: 70px;
+    }
+    .btn-r {
+      background: #fbeebb;
+    }
+  }
+  .show-container-business {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 40px;
+    .container-business {
+      padding: 5px;
+      width: 125px;
+      margin-bottom: 20px;
+      height: 125px;
+      align-items: center;
+      display: flex;
+      img {
+        width: -webkit-fill-available;
+      }
+    }
+  }
+}
+
+.advantage {
+  background-image: url(../../../assets/images/onda_alreves_landin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 30px;
+  height: 500px;
+  .advantage-joining {
+    font-weight: 900;
+    font-size: 57px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: #7a54ff;
+    align-items: center;
+    text-align: center;
+  }
+  .container-advantage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: stretch;
+    .unit-container {
+      width: 256px;
+      span {
+        color: #5c93a9;
+        width: 100%;
+        text-align: center;
+        font-size: 90px;
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 25px;
+        color: #7a54ff;
+        text-align: center;
+      }
+      p {
+        font-weight: 400;
+        font-size: 19px;
+        text-align: center;
+        color: #7a54ff;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+  }
+}

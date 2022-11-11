@@ -1,0 +1,10 @@
+<!-- Posiblemente se reemplace este nav bar -->
+<main>
+  <app-sidebar
+    activeDir="{{ currentSubDir }}"
+    [role]="currentRole"
+  ></app-sidebar>
+  <section>
+    <ng-content></ng-content>
+  </section>
+</main>

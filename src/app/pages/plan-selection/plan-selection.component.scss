@@ -1,0 +1,123 @@
+#h1-prepared {
+  font-weight: 900;
+  font-size: 57px;
+  color: #7a54ff;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#h3-choose {
+  font-weight: 700;
+  font-size: 36px;
+  color: #a991ff;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.container-plan {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: stretch;
+  .plan {
+    margin: 0px 5px;
+    border: 5px solid #023c55;
+    border-radius: 30px;
+    padding: 30px;
+    color: #27213c;
+    transition: all 0.2s;
+    background: #fbf8f8;
+    &-header {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-content: stretch;
+      .plan-name {
+        margin: 5px 0px 0px;
+        font-weight: 700;
+        font-size: 36px;
+      }
+      .slogan {
+        margin: 0px;
+        font-weight: 400;
+        font-size: 20px;
+      }
+    }
+
+    &-type {
+      font-weight: 900;
+      font-size: 57px;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+
+    &-buttom {
+      border: 4px solid #100240;
+      border-radius: 30px;
+      width: 295px;
+      height: 65px;
+      transition: all 0.2s;
+      background: #fbf8f8;
+      font-weight: 400;
+      font-size: 32px;
+      color: #100240;
+      cursor: pointer;
+    }
+    .include {
+      font-weight: 400;
+      font-size: 32px;
+      margin-bottom: 0px;
+    }
+
+    &-include-container {
+      margin-bottom: 15px;
+      margin-top: 10px;
+    }
+
+    &-include {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: stretch;
+      font-weight: 700;
+      font-size: 20px;
+      &-icon {
+        width: 44px;
+        span {
+          font-size: 30px;
+        }
+      }
+      &-content {
+        width: 251px;
+      }
+    }
+  }
+
+  .plan:hover {
+    background: #7a54ff;
+    border-radius: 30px;
+    color: white;
+    .plan-buttom {
+      border: 4px solid #fbf8f8;
+      border-radius: 30px;
+      width: 295px;
+      height: 65px;
+      background: #7a54ff;
+      color: #fbf8f8;
+    }
+    .plan-buttom:hover {
+      border: 4px solid #100240;
+      border-radius: 30px;
+      width: 295px;
+      height: 65px;
+      background: #7a54ff;
+      color: #100240;
+    }
+  }
+}

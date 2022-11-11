@@ -1,0 +1,6 @@
+<a *ngIf="redirectTo" routerLink="{{ redirectTo }}" [ngClass]="classNames">
+  {{ text }}
+</a>
+<button *ngIf="!redirectTo" [ngClass]="classNames" (click)="handleClick()">
+  {{ text }}
+</button>

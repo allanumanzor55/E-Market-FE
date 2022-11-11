@@ -1,0 +1,40 @@
+@import "component";
+
+.title{
+    @include headline-small-font;
+    color: $purple3;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.container-cart{
+    display: flex;
+    margin: 10px;
+    &-products{
+        width: 100%;
+    }
+    &-total{
+        width: 300px;
+        &-card{
+            background: $white3;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            padding: 10px;
+            .total-products{
+                text-align: center;
+                @include title-large-font;
+                color:$primary;
+            }
+            .subtotal-products{
+                text-align: center;
+                @include title-large-font;
+            }
+            .buy{
+                width: 150px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+}

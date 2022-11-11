@@ -1,0 +1,82 @@
+@import "component";
+
+.title-template {
+  @include headline-small-font;
+  color: $primary;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.row{
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+.col-1, .col-2,
+.col-3, .col-4,
+.col-5, .col-6,
+.col-7, .col-8,
+.col-9, .col-10,
+.col-11, .col-12 {
+  padding: 3px;
+  .column-inside {
+    @include title-large-font;
+    background-color: $white2;
+    border: 1px solid $purple3;
+    border-radius: 3px;
+    display: flex;
+    transition: .3s;
+    &-text{
+        text-align: center;
+        color: $softPurple;
+        width: 100%;
+        transition: .3s;
+    }
+    &-icon{
+        height: 23px;
+        background: $white1;
+        border-radius: 30px;
+        margin-top: 3px;
+        margin-right: 3px;
+        box-shadow: 0px 2px 6px rgba(36, 5, 143, 0.12);
+        cursor: pointer;
+        transition: .3s;
+        display: none;
+    }
+  }
+  .column-inside:hover {
+    background-color: $softPurple;
+    border: 1px solid $primary;
+    .column-inside-text{
+        text-align: center;
+        color: $primary;
+        width: 100%;
+    }
+    .column-inside-icon{
+      border-radius: 30px;
+      transition: .3s;
+      display: inline;
+    }
+    .column-inside-icon:hover{
+        border-radius: 3px;
+    }
+  }
+  
+}
+
+.container {
+  margin: 10px 10px;
+  padding: 0px;
+}
+
+.col-1 #add{
+    color: #7A54FF;
+    background-color: $white2;
+    border-radius: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;transition: .3s;
+}
+
+.col-1 #add:hover{
+    border-radius: 3px;
+}

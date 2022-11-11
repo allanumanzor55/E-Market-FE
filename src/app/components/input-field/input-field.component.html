@@ -1,0 +1,6 @@
+<div class="container-options-image" [style]="'background-image: url('+srcImage+');'">
+    <div class="container-options-image-internal" (click)="uploadFile.click()">
+        <img [src]="image" class="image" alt="user">
+    </div>
+    <input type="file" (change)="getImage($event)" accept="image/*" #uploadFile style="display:none">
+</div>

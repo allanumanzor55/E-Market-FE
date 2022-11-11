@@ -1,0 +1,12 @@
+@import "component";
+
+.text-input {
+  border: 1px solid $softPurple;
+  outline: none;
+  background-color: $white2;
+  border-radius: 12px;
+  height: 50px;
+  padding: 0 10px;
+  font-size: 1.2rem;
+  width: 100%;
+}

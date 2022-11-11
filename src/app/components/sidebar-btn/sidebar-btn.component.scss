@@ -1,0 +1,31 @@
+@import "component";
+
+a {
+  text-decoration: none;
+
+  li {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: $primary;
+    border-radius: 30px;
+    transition: 0.35s;
+    gap: 12px;
+
+    &:hover,
+    &.is-active {
+      background-color: $primary;
+      color: $white1;
+    }
+
+    span {
+      font-size: 24px;
+    }
+
+    p {
+      @include label-large-font;
+      margin: 0;
+    }
+  }
+}

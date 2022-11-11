@@ -1,0 +1,9 @@
+<div class="card">
+  <img src="{{ image }}" alt="card image" />
+  <div class="card-info">
+    <h5>{{ title }}</h5>
+    <h6 *ngIf="subTitle">{{ subTitle }}</h6>
+    <p *ngIf="text">{{ text }}</p>
+  </div>
+  <button><span class="material-icons">more_vert</span></button>
+</div>
