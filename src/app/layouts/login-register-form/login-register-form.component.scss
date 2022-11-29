@@ -7,8 +7,8 @@
     flex-direction: row-reverse;
   }
 
-  .side-seciton {
-    background: linear-gradient(135deg, #c29aee 0%, #6338e7 100%);
+  .side-seciton { 
+    background: linear-gradient(135deg, #905097 0%, #{$primary} 100%);
     max-width: 770px;
     width: 40%;
     height: 100vh;

@@ -39,12 +39,12 @@ nav {
     font-size: 57px;
     line-height: 64px;
     margin-bottom: 0px;
-    color: #7a54ff;
+    color: $primary;
   }
   h3 {
     font-weight: 700;
     font-size: 36px;
-    color: #a991ff;
+    color: $softPurple;
     line-height: 52px;
     padding-left: 22%;
     margin-top: 10px;
@@ -60,7 +60,7 @@ nav {
     h1 {
       font-weight: 900;
       font-size: 50px;
-      color: #7a54ff;
+      color: $primary;
       margin-left: 90px;
     }
     button {
@@ -86,7 +86,7 @@ nav {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    color: #7a54ff;
+    color: $primary;
     padding-top: 40px;
     align-items: center;
     text-align: center;
@@ -96,7 +96,7 @@ nav {
     margin-right: auto;
     font-weight: 400;
     font-size: 32px;
-    color: #4e4c4c;
+    color: $softPurple;
     align-items: center;
     text-align: center;
   }
@@ -124,11 +124,11 @@ nav {
       border: none;
     }
     .btn-is {
-      background: #ececec;
+      background: $softPurple;
       margin-right: 70px;
     }
     .btn-r {
-      background: #fbeebb;
+      background: $softPurple;
     }
   }
   .show-container-business {
@@ -167,7 +167,7 @@ nav {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    color: #7a54ff;
+    color: $primary;
     align-items: center;
     text-align: center;
   }
@@ -181,7 +181,7 @@ nav {
     .unit-container {
       width: 256px;
       span {
-        color: #5c93a9;
+        color: $softPurple;
         width: 100%;
         text-align: center;
         font-size: 90px;
@@ -189,14 +189,14 @@ nav {
       h3 {
         font-weight: 700;
         font-size: 25px;
-        color: #7a54ff;
+        color: $primary;
         text-align: center;
       }
       p {
         font-weight: 400;
         font-size: 19px;
         text-align: center;
-        color: #7a54ff;
+        color: $primary;
         padding-left: 30px;
         padding-right: 30px;
       }
